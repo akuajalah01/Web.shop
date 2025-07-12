@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Web Danggan Sederhana</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-yellow-300 via-red-400 to-pink-500 min-h-screen flex items-center justify-center p-6">
+  <div class="bg-white bg-opacity-90 rounded-3xl shadow-xl max-w-xl w-full p-8 flex flex-col items-center">
+    <h1 class="text-4xl font-extrabold text-rose-600 mb-6 font-sans">Web Danggan</h1>
+    <p class="text-gray-700 text-center text-lg mb-6 px-4 leading-relaxed font-serif">Jangn muadah menayraha harus tetep 😡😡!!!</p>
+    
+    <img 
+      src=""
+      alt="Ilustrasi danggan modern berwarna hangat dengan latar belakang gradasi dan pola abstrak yang elegan"
+      class="rounded-lg shadow-md w-full max-w-md mb-8"
+      onerror="this.style.display='none';"
+    />
+
+    <button id="btnDanggan" class="bg-rose-600 hover:bg-rose-700 text-white font-semibold py-3 px-8 rounded-full transition"> dana  </button>
+    <button id="btnDanggan" class="bg-rose-600 hover:bg-rose-700 text-white font-semibold py-3 px-8 rounded-full transition"> gopy</button>
+    <button id="btnDanggan" class="bg-rose-600 hover:bg-rose-700 text-white font-semibold py-3 px-8 rounded-full transition"> ovo </button>
+
+    <p id="textResponse" class="mt-6 text-gray-800 font-medium text-center"></p>
+  </div>
+
+  <script>
+    const btn = document.getElementById('btnDanggan');
+    const textResponse = document.getElementById('textResponse');
+
+    btn.addEventListener('click', () => {
+      const messages = [
+      
+        "NO GOPAY: ",
+        "NO OVO: ",
+        "https://a.top4top.io/p_3475tf1s71.jpg"
+        
+      ];
+      const randomIndex = Math.floor(Math.random() * messages.length);
+      textResponse.textContent = messages[randomIndex];
+    });
+  </script>
+</body>
+</html>
+
